@@ -1,0 +1,30 @@
+@media (min-width:650px){
+    .logo {
+        width: 30%;
+    }
+    .contenedor-slider  {
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+   .contenedor-slider article img {
+        border: solid 1px #676767;
+        min-height: 350px;
+    }
+        /*NOTIFICACIONES*/
+    .contenedor-notificaciones table {
+    }
+    .contenedor-notificaciones table tr {
+        float:left;
+        padding: 0 0.1%;
+    }
+    .contenedor-notificaciones tr:last-child {
+        border-bottom: transparent;
+    }
+    .contenedor-notificaciones table tr {
+        width: 30%;
+        margin-left: 1em;
+    }
+    
+
+}

@@ -1,0 +1,67 @@
+
+.contenedor-notificaciones {
+   font-family:'proximanova-light-webfont';
+    margin-top: 1em;
+}
+
+.notificacion {
+    background: #318AEE;
+    padding: 1em 0 1em 1em;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Montserrat-regular';
+}
+
+.contenedor-notificaciones table {
+    color: #676767;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.contenedor-notificaciones .titulo {
+    background: #318AEE;
+    color: #fff;
+    border-bottom: solid 1px aliceblue;
+}
+.contenedor-notificaciones .titulos-notificacion {
+    color: #fff;
+}
+.contenedor-notificaciones  tr td:nth-child(even) {
+    background:  #318AEE;
+}
+.contenedor-notificaciones table td {
+    display: block;
+    font-weight: 700; 
+    text-align: center;
+    background: #fff;
+    padding: 0.7em;
+}
+.contenedor-notificaciones td:last-child {
+    border-bottom: solid 10px #E9E9E9;        
+}
+
+
+.contenedor-notificaciones table tr td{
+    width: 90%;
+    margin-left: 2.5%;
+}
+
+    .contenedor-notificaciones a, .contenedor-requisitos a{
+        font-size: 2rem;
+        text-decoration: none;
+        color: #212121;
+        opacity: .7;
+        padding: 0.2em 0.5em;
+        border-radius: 0.5em;
+        float: right;
+        margin-right: 1em;
+        display: none;
+    }
+    .contenedor-notificaciones a:hover, .contenedor-requisitos a:hover {
+        opacity: .9;
+    }
+    .notificacion {
+        cursor: pointer;
+    }

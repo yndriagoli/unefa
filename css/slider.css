@@ -1,0 +1,14 @@
+.contenedor-slider {
+   font-family:'proximanova-light-webfont';
+}
+
+.contenedor-slider ul li img {
+    width: 100%;
+}
+.contenedor-slider .bxslider a {
+    position: relative;
+    z-index: 2000;
+    float: right;
+    color: aliceblue;
+    margin:0 1em 0.5em 0;
+}

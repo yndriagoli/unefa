@@ -1,0 +1,30 @@
+/*REQUISITOS PARA BECAS*/  
+.contenedor-requisitos {
+    display: none;
+}
+    .becas {
+        background: #318AEE;
+        padding: 2em 0 2em 1em;
+        color: #fff;
+        font-size: 1rem;
+    }
+    
+    .contenedor-requisitos ul, p {
+        padding-left: 3em;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+    }
+    
+    .contenedor-requisitos ul li, p {
+        font-size: 1.6rem;
+        color: #737373;
+    }
+    
+    .contenedor-requisitos p {
+        width: 70%;
+    }
+    .contenedor-requisitos ul li a {
+        float: right;
+        color: #318AEE;
+        margin-right: 1em;
+    }

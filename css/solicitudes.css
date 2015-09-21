@@ -1,0 +1,12 @@
+.contenedor-solicitudes {
+    display: none;
+}
+.contenedor-becas, .contenedor-fames, .contenedor-programa-orientacion {
+    font-family: 'Montserrat-regular';
+}
+
+.contenedor-solicitudes img {
+    display: none;
+}
+
+
