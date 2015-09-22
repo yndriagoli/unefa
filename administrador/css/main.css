@@ -400,6 +400,16 @@ th {
   padding: 0;
 }
 
+@font-face {
+  font-family: 'flat';
+  src: url(../fonts/flat.woff2);
+}
+
+@font-face {
+  font-family: 'bold';
+  src: url(../fonts/bold.woff2);
+}
+
 .login {
   box-shadow: 2px 2px 7px #E5E5E5, -1px -1px 7px #E5E5E5;
   border-radius: 0.3em;
@@ -415,7 +425,7 @@ th {
 
 .login p {
   border-bottom: solid 1px #E5E5E5;
-  color: #1E9EE3;
+  color: #3974D8;
   font-weight: 600;
   padding-bottom: 1em;
   padding-left: 0.4em;
@@ -439,7 +449,7 @@ th {
   border: 1px solid #E5E5E5;
   border-radius: 0.3em;
   box-shadow: 1px 1px 1px #E5E5E5, -1px -1px 2px #E5E5E5;
-  color: #1E9EE3;
+  color: #3974D8;
   height: 2.3em;
   margin-top: 1em;
   padding-left: 0.3em;
@@ -448,12 +458,12 @@ th {
 }
 
 .login form input:focus {
-  box-shadow: 1px 1px 1px #1E9EE3, -1px -1px 2px #1E9EE3;
-  -moz-box-shadow: 1px 1px 1px #1E9EE3, -1px -1px 2px #1E9EE3;
+  box-shadow: 1px 1px 1px #3974D8, -1px -1px 2px #3974D8;
+  -moz-box-shadow: 1px 1px 1px #3974D8, -1px -1px 2px #3974D8;
 }
 
 .login form input.submit {
-  background: #1E9EE3;
+  background: #3974D8;
   border: none;
   color: aliceblue;
   font-weight: 600;
@@ -462,4 +472,122 @@ th {
   padding: 0;
   width: 35%;
   float: right;
+}
+
+.fuente-flat, #container-panel, #container-panel header .menu-top ul li > ul > li {
+  font-family: 'flat';
+}
+
+.fuente-bold, #container-panel header .menu-top ul li, #container-panel .container-inicio h1 {
+  font-family: 'bold';
+}
+
+#container-panel header {
+  background: #FAFAFA;
+  height: 55px;
+  box-shadow: 0px 2px #DCDCDC;
+}
+
+#container-panel header .menu-top, #container-panel header div {
+  display: inline;
+}
+
+#container-panel header div a {
+  color: #3974D8;
+  text-decoration: none;
+}
+
+#container-panel header div a img {
+  width: 1.5em;
+  margin: 0.3em 0.5em 0em 1em;
+}
+
+#container-panel header div a:hover {
+  color: #3974D8;
+}
+
+#container-panel header div a.exit {
+  float: right;
+  margin: 1.9em 1em 0 0;
+  color: #3974D8;
+  text-decoration: underline;
+}
+
+#container-panel header .menu-top {
+  float: right;
+}
+
+#container-panel header .menu-top ul {
+  margin-right: 3.5em;
+  float: right;
+}
+
+#container-panel header .menu-top ul li {
+  color: #5A5A5A;
+  display: inline;
+  text-align: center;
+  padding: 0.5em 0.7em;
+}
+
+#container-panel header .menu-top ul li > ul {
+  position: absolute;
+  padding: 0.7em 0.5em 0.5em 0.5em;
+  box-shadow: 2px 2px 12px #DCDCDC, -2px -2px 12px #DCDCDC;
+  width: 18em;
+  margin-top: 0.5em;
+  margin-left: 0.7em;
+  background: white;
+  display: none;
+}
+
+#container-panel header .menu-top ul li > ul > li {
+  display: block;
+  text-align: left;
+  padding: 0.6em 0.6em;
+  border: none;
+}
+
+#container-panel header .menu-top ul li > ul li:nth-child(1), #container-panel header .menu-top ul li > ul li:nth-child(2) {
+  border-bottom: solid 1px #EFEFEF;
+}
+
+#container-panel header .menu-top ul li > ul li:hover {
+  box-shadow: none;
+}
+
+#container-panel header .menu-top ul li:hover {
+  cursor: pointer;
+}
+
+#container-panel header .menu-top ul li:hover > ul {
+  display: block;
+}
+
+#container-panel .container-inicio {
+  color: #5A5A5A;
+  width: 30%;
+  text-align: center;
+  height: 16.3em;
+  margin: 0 auto;
+  border: solid 1px #EFEFEF;
+  margin-top: 1em;
+  border-radius: 0.3em;
+  box-shadow: 1px 1px 12px #DCDCDC, -1px -1px 12px #DCDCDC;
+}
+
+#container-panel .container-inicio h1 {
+  background: #FAFAFA;
+  margin-top: 0;
+  padding: 0.2em 0;
+}
+
+#container-panel .container-inicio > div {
+  margin-top: 1em;
+  border-top: solid 1px #EFEFEF;
+}
+
+#container-panel .container-inicio > div div {
+  color: #3974D8;
+  width: 2em;
+  margin: 0 auto;
 }
