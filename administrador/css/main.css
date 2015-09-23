@@ -536,11 +536,11 @@ th {
   margin: 0;
 }
 
-.fuente-flat, #container-panel, #container-panel header .menu-top ul li > ul > li, #container-panel .container-tabla-menu nav {
+.fuente-flat, #container-panel, #container-panel header .menu-top ul li > ul > li, #container-panel .container-tabla-menu nav, #container-panel .container-tabla-menu table thead tr th {
   font-family: 'flat';
 }
 
-.fuente-bold, #container-panel header .menu-top ul li, #container-panel .container-inicio h1 {
+.fuente-bold, #container-panel header .menu-top ul li, #container-panel .container-inicio h1, #container-panel .container-tabla-menu table thead tr th:first-child {
   font-family: 'bold';
 }
 
@@ -723,4 +723,26 @@ th {
   cursor: pointer;
   background: #3974D8;
   color: white;
+}
+
+#container-panel .container-tabla-menu table {
+  width: 100%;
+}
+
+#container-panel .container-tabla-menu table thead tr th {
+  color: #5A5A5A;
+  background: #EEEEEE;
+  text-align: left;
+  padding: 1.2em;
+  font-weight: 200;
+  font-size: 1.4rem;
+}
+
+#container-panel .container-tabla-menu table thead tr th:first-child {
+  width: 30%;
+}
+
+#container-panel .container-tabla-menu table tr td {
+  padding: 1em 0 1em 1em;
+  border-bottom: solid 1px #EFEFEF;
 }

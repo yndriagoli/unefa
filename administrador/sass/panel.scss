@@ -187,5 +187,25 @@ $color-terciario : #EA4335;
                 
             }
         }
+        table {
+            width: 100%;
+            thead tr th {
+                @extend .fuente-flat;
+                color: $letras-menu;
+                background: #EEEEEE;
+                text-align: left;
+                padding: 1.2em;
+                font-weight: 200;
+                font-size: 1.4rem;
+            }
+            thead tr th:first-child {
+                @extend .fuente-bold;
+                width: 30%;
+            }
+            tr td {
+                padding: 1em 0 1em 1em;
+                border-bottom: solid 1px $lineas;
+            }
+        }
     }
 }
