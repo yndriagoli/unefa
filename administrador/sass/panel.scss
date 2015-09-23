@@ -3,7 +3,12 @@ $letras-menu : #5A5A5A;
 $lineas : #EFEFEF;
 $sombras : #DCDCDC;
 $color-primario : #3974D8;
-
+$color-secundario : #FBBC05;
+$color-terciario : #EA4335;
+* {
+    padding: 0;
+    margin: 0;
+}
 .fuente-flat {
     font-family: 'flat';
 }
@@ -17,18 +22,18 @@ $color-primario : #3974D8;
     header { 
         background: $barra-menu;
         height: 55px;
-        box-shadow: 0px 2px $sombras;
+        box-shadow: 0px 2px 8px $sombras;
         .menu-top, div {
             display: inline;
         }
         div {
 
             a {
-                color: $color-primario;
+                color: $letras-menu;
                 text-decoration: none;
                 img {
                     width: 1.5em;
-                    margin: 0.3em 0.5em 0em 1em;
+                    margin: 0.3em 0.5em 0em 2em;
                 }
             }
             a:hover {
@@ -37,22 +42,28 @@ $color-primario : #3974D8;
             
             a.exit {
                 float: right;
-                margin: 1.9em 1em 0 0;
+                margin: 1.9em 2em 0 0;
                 color: $color-primario;
-                text-decoration: underline;
+                span {
+                    margin-left: 0.3em;
+                }
             }
         }
         .menu-top {
             float: right;
             ul {
                 margin-right: 3.5em;
+                margin-top: 2em;
                 float: right;
                 li {
                     @extend .fuente-bold;
-                    color: $letras-menu;
+                    color: $color-primario;
                     display: inline;
                     text-align: center;
                     padding: 0.5em 0.7em;
+                    span {
+                        font-size: 1.2rem;
+                    }
                     >ul {
                         position: absolute;
                         padding: 0.7em  0.5em 0.5em 0.5em;
@@ -72,8 +83,12 @@ $color-primario : #3974D8;
                         li:nth-child(1), li:nth-child(2){
                             border-bottom: solid 1px $lineas;
                         }
+                        li {
+                            color: $color-primario;
+                        }
                         li:hover {
                             box-shadow: none;
+                            background: $barra-menu;
                         }
                     }
                 }  
@@ -87,6 +102,7 @@ $color-primario : #3974D8;
             }
         }
     }
+    
     .container-inicio {
         color: $letras-menu;
         width: 30%;
@@ -97,6 +113,7 @@ $color-primario : #3974D8;
         margin-top: 1em;
         border-radius: 0.3em;
         box-shadow: 1px 1px 12px $sombras, -1px -1px 12px $sombras;
+        display: none;
         h1 {
             @extend .fuente-bold;
             background: $barra-menu;
@@ -116,5 +133,59 @@ $color-primario : #3974D8;
             }
         }
         
+    }
+    
+    .container-tabla-menu {
+        nav {
+            background: $barra-menu;
+            color: $letras-menu;
+            @extend .fuente-flat;
+            color: $color-primario;
+            margin-top: 0.2em;
+                padding: 1em;
+            ul {
+                list-style: none;
+                width: 100%;
+                margin-left: 0.5em;
+                li {
+                    padding: 0.8em;
+                    font-size: 1.4rem;
+                    display: inline;
+                    text-align: center;
+                    margin-left: 0.8em;
+                    span {
+                        margin-right: 0.5em;                        
+                    }
+                    >ul {
+                        width: 20em;
+                        position: absolute;
+                        background: $color-primario;
+                        margin: 0.8em 0 0 -1em;
+                        display: none;
+                        padding: 0.5em;
+                        >li {
+                            display: block;
+                            text-align: left;
+                            font-weight: 200;
+                            padding-top: 0.4em;  
+                        }
+                        >li:hover {
+                            border-left: solid 5px white;
+                        }
+                    }
+                }
+                li:nth-child(1) {
+                    background: $color-primario;
+                    color: white;
+                }
+                li:hover {
+                    cursor: pointer;
+                    background: $color-primario;
+                    color: white;
+                    
+                }
+                
+            }
+        }
     }
 }

@@ -401,6 +401,63 @@ th {
 }
 
 @font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?t1pg37");
+  src: url("../fonts/icomoon/icomoon.eot?#iefixt1pg37") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?t1pg37") format("truetype"), url("../fonts/icomoon/icomoon.woff?t1pg37") format("woff"), url("../fonts/icomoon/icomoon.svg?t1pg37#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil:before {
+  content: "\e600";
+}
+
+.icon-profile:before {
+  content: "\e601";
+}
+
+.icon-folder-download:before {
+  content: "\e602";
+}
+
+.icon-user:before {
+  content: "\e603";
+}
+
+.icon-bin:before {
+  content: "\e604";
+}
+
+.icon-cross:before {
+  content: "\e605";
+}
+
+.icon-checkmark2:before {
+  content: "\e606";
+}
+
+.icon-exit:before {
+  content: "\e607";
+}
+
+.icon-circle-down:before {
+  content: "\e608";
+}
+
+@font-face {
   font-family: 'flat';
   src: url(../fonts/flat.woff2);
 }
@@ -474,7 +531,12 @@ th {
   float: right;
 }
 
-.fuente-flat, #container-panel, #container-panel header .menu-top ul li > ul > li {
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.fuente-flat, #container-panel, #container-panel header .menu-top ul li > ul > li, #container-panel .container-tabla-menu nav {
   font-family: 'flat';
 }
 
@@ -485,7 +547,7 @@ th {
 #container-panel header {
   background: #FAFAFA;
   height: 55px;
-  box-shadow: 0px 2px #DCDCDC;
+  box-shadow: 0px 2px 8px #DCDCDC;
 }
 
 #container-panel header .menu-top, #container-panel header div {
@@ -493,13 +555,13 @@ th {
 }
 
 #container-panel header div a {
-  color: #3974D8;
+  color: #5A5A5A;
   text-decoration: none;
 }
 
 #container-panel header div a img {
   width: 1.5em;
-  margin: 0.3em 0.5em 0em 1em;
+  margin: 0.3em 0.5em 0em 2em;
 }
 
 #container-panel header div a:hover {
@@ -508,9 +570,12 @@ th {
 
 #container-panel header div a.exit {
   float: right;
-  margin: 1.9em 1em 0 0;
+  margin: 1.9em 2em 0 0;
   color: #3974D8;
-  text-decoration: underline;
+}
+
+#container-panel header div a.exit span {
+  margin-left: 0.3em;
 }
 
 #container-panel header .menu-top {
@@ -519,14 +584,19 @@ th {
 
 #container-panel header .menu-top ul {
   margin-right: 3.5em;
+  margin-top: 2em;
   float: right;
 }
 
 #container-panel header .menu-top ul li {
-  color: #5A5A5A;
+  color: #3974D8;
   display: inline;
   text-align: center;
   padding: 0.5em 0.7em;
+}
+
+#container-panel header .menu-top ul li span {
+  font-size: 1.2rem;
 }
 
 #container-panel header .menu-top ul li > ul {
@@ -551,8 +621,13 @@ th {
   border-bottom: solid 1px #EFEFEF;
 }
 
+#container-panel header .menu-top ul li > ul li {
+  color: #3974D8;
+}
+
 #container-panel header .menu-top ul li > ul li:hover {
   box-shadow: none;
+  background: #FAFAFA;
 }
 
 #container-panel header .menu-top ul li:hover {
@@ -573,6 +648,7 @@ th {
   margin-top: 1em;
   border-radius: 0.3em;
   box-shadow: 1px 1px 12px #DCDCDC, -1px -1px 12px #DCDCDC;
+  display: none;
 }
 
 #container-panel .container-inicio h1 {
@@ -590,4 +666,61 @@ th {
   color: #3974D8;
   width: 2em;
   margin: 0 auto;
+}
+
+#container-panel .container-tabla-menu nav {
+  background: #FAFAFA;
+  color: #5A5A5A;
+  color: #3974D8;
+  margin-top: 0.2em;
+  padding: 1em;
+}
+
+#container-panel .container-tabla-menu nav ul {
+  list-style: none;
+  width: 100%;
+  margin-left: 0.5em;
+}
+
+#container-panel .container-tabla-menu nav ul li {
+  padding: 0.8em;
+  font-size: 1.4rem;
+  display: inline;
+  text-align: center;
+  margin-left: 0.8em;
+}
+
+#container-panel .container-tabla-menu nav ul li span {
+  margin-right: 0.5em;
+}
+
+#container-panel .container-tabla-menu nav ul li > ul {
+  width: 20em;
+  position: absolute;
+  background: #3974D8;
+  margin: 0.8em 0 0 -1em;
+  display: none;
+  padding: 0.5em;
+}
+
+#container-panel .container-tabla-menu nav ul li > ul > li {
+  display: block;
+  text-align: left;
+  font-weight: 200;
+  padding-top: 0.4em;
+}
+
+#container-panel .container-tabla-menu nav ul li > ul > li:hover {
+  border-left: solid 5px white;
+}
+
+#container-panel .container-tabla-menu nav ul li:nth-child(1) {
+  background: #3974D8;
+  color: white;
+}
+
+#container-panel .container-tabla-menu nav ul li:hover {
+  cursor: pointer;
+  background: #3974D8;
+  color: white;
 }
