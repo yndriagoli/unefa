@@ -32,10 +32,7 @@
    <section class="container">                        
        <section class="contenedor-slider">
             <ul class="bxslider">
-                <li><img src="http://lorempicsum.com/nemo/1200/400/1" title="Esto es lo que va debajo de cada imagen jaja" /><a href="">Ver más</a></li>
-                <li><img src="http://lorempicsum.com/nemo/1200/400/1" title="Esto es lo que va debajo de cada imagen jaja"/><a href="">Ver más</a></li>
-                <li><img src="http://lorempicsum.com/nemo/1200/400/1" title="Esto es lo que va debajo de cada imagen jaja"/><a href="">Ver más</a></li>
-                <li><img src="http://lorempicsum.com/nemo/1200/400/1" title="Esto es lo que va debajo de cada imagen jaja"/><a href="">Ver más</a></li>
+                <li><img src="images/bienestar.jpg" title="Bienestar Estudiantil" /><a href="">Ver más</a></li>
             </ul>
        </section>
         <section class="contenedor-notificaciones">
@@ -106,10 +103,41 @@
         </section>
         <section class="contenedor-mensajes">
             <!-- BEGIN CBOX - www.cbox.ws - v4.3 -->
+    <link rel="stylesheet" href="../css/formoid-solid-blue.css"   type="text/css" />
+<form class="formoid-solid-blue" style="background-color:#FFFFFF;font-size:12px;font-family:'Times New Roman',Times,serif;color:#34495E;width:100%;" method="post" action="php/reg_mensaje_reg.php">
+<table border="0" align="center" >
+<tr><td><img src="img/logo-unefa.gif" width="90px" height="90px" /></td>
+
+<td><div class="title" style="max-width:100%">
+<h2>Chat - Bienestar Estudiantil</h2></div></td></tr>
+
+</table>
+</table>
 <div id="cboxdiv" style="position: relative; margin: 0 auto; width: 800px; font-size: 0; line-height: 0;">
 <div style="position: relative; height: 300px; overflow: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; border:#ababab 1px solid;"><iframe src="http://www3.cbox.ws/box/?boxid=3491126&boxtag=deeecf&sec=main" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="auto" allowtransparency="yes" name="cboxmain3-3491126" id="cboxmain3-3491126"></iframe></div>
 <div style="position: relative; height: 80px; overflow: hidden; border:#ababab 1px solid; border-top: 0px;"><iframe src="http://www3.cbox.ws/box/?boxid=3491126&boxtag=deeecf&sec=form" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="no" allowtransparency="yes" name="cboxform3-3491126" id="cboxform3-3491126"></iframe></div>
 </div>
+
+<link rel="stylesheet" href="../css/formoid-solid-blue.css"   type="text/css" />
+<form class="formoid-solid-blue" style="background-color:#FFFFFF;font-size:12px;font-family:'Times New Roman',Times,serif;color:#34495E;width:100%;" method="post" action="php/reg_mensaje_reg.php">
+<table border="0" align="center" >
+<tr><td><img src="img/logo-unefa.gif" width="90px" height="90px" /></td>
+
+<td><div class="title" style="max-width:100%">
+<h2>Enviar Mensaje - Bienestar Estudiantil</h2></div></td></tr>
+
+</table>
+<table border="0" align="center" width="70%">
+<tr><td colspan="3"><div class="element-input"><label class="title">Titulo: <span class="required"></span></label><div class="item-cont"><input class="large" type="text" name="titulo" required="required" placeholder="Titulo:"/><span class="icon-place"></span></div></div></td></tr>
+
+<tr><td colspan="3"><div class="element-input"><label class="title">Mensaje<span class="required"></span></label><div class="item-cont"><textarea  name="mensaje" required="required" placeholder="Mensaje:"></textarea><span class="icon-place"></span></div></div></td></tr>
+<tr><th  colspan="4"><div class="submit"><input type="submit" name="Enviar" value="Enviar"/></div></tr>
+ </table>
+    
+</form><p class="frmd">
+<script type="text/javascript" src="reg_solic_bec_es_files/formoid1/formoid-solid-blue.js"></script>
+
+
 <!-- END CBOX -->   
         </section>
 <!--        COMIENZA SOLICITUD DE BECAS-->
@@ -118,8 +146,9 @@
         <section class="contenedor-becas" >
             <link rel="stylesheet" href="../css/formoid-solid-blue.css"   type="text/css" />
 <!--COMIENZA SOLICITUD DE BECAS-->
-<form class="formoid-solid-blue" style="background-color:#FFFFFF;font-size:12px;font-family:'Times New Roman',Times,serif;color:#34495E;width:100%;" method="post" action="reg_solic_bec_es_reg.php">
-
+<form class="formoid-solid-blue" style="background-color:#FFFFFF;font-size:12px;font-family:'Times New Roman',Times,serif;color:#34495E;width:100%;" method="post" action="php/reg_solic_bec_es_reg.php">
+<input  type="hidden" name="tip_benf" value="beca"/>
+<input  type="hidden" name="estatus" value="en proceso"/>
 
 <table border="0" align="center" >
 <tr><td><img src="img/logo-unefa.gif" width="90px" height="90px" /></td>
@@ -128,12 +157,21 @@
 <h2>SOLICITUD DE ASIGNACIÓN DE BENEFICIOS SOCIOECONOMICOS ESTUDIANTILES</h2></div></td></tr>
 
 </table>
-	<div class="element-radio"><label class="title"><h3>Tipo de Beca</h3></label>		<div class="column column1"><label><input type="radio" name="tipo" value="Beca Ayudantia" /><span>Beca Ayudantia</span></label><label><input type="radio" name="tipo" value=" Administrativo" /><span>Beca Ayudante Administrativo</span></label><label><input type="radio" name="tipo" value="Beca Preparadores" /><span>Beca Preparadores</span></label><label><input type="radio" name="tipo" value="Beca Alto Rendimiento" /><span>Beca Alto Rendimiento</span></label><label><input type="radio" name="tipo" value="Beca Deporte" /><span>Beca Deporte</span></label><label><input type="radio" name="tipo" value="Beca Cultura" /><span>Beca Cultura</span></label></div><span class="clearfix"></span>
-</div>
+	
+<div class="element-select" title="Estado Civil"><label class="title"><span class="required"></span>Tipo de Becas</label><div class="item-cont"><div class="medium"><span><select name="tipo" required>
+
+<option hidden="Seleccione" value="Selecione">Seleccione</option>
+       <option value="Beca Ayudantia">Beca Ayudantia</option>
+            <option value="Beca Ayudante Administrativo">Beca Ayudante Administrativo</option>
+            <option value="Beca Preparadores">Beca Preparadores</option>
+            <option value="Beca Alto Rendimiento">Beca Alto Rendimiento</option>
+            <option value="Beca Deporte">Beca Deporte</option>
+        <option value="Beca Cultura">Beca Cultura</option></select><i></i><span class="icon-place"></span></span></div></div></div>
 
 
 
 <table border="0" align="center" width="98%">
+
 
 <tr><th colspan="4"><div align="center" class="element-separator"><hr><h1 class="section-break-title">1 - Perfil Curricular</h1></div></th>
 
@@ -168,12 +206,12 @@
 </td>
 
 <tr><td>
-<div class="element-radio"><label class="title"><h3>Genero</h3></label>		
-<div class="column column2"><label><input type="radio" name="genero" value="Femenino" /><span>Femenino</span></label>
+<div class="element-select" title="Estado Civil"><label class="title"><span class="required"></span>Género</label><div class="item-cont"><div class="medium"><span><select name="genero" required>
 
-</div><span class="clearfix"></span>
-		<div class="column column2"><label><input type="radio" name="genero" value="Masculino" /><span>Masculino</span></label></div><span class="clearfix"></span>
-</div>
+<option hidden="Seleccione" value="Selecione">Seleccione</option>
+        <option value="Femenino">Femenino</option>
+        <option value="Masculino">Masculino</option></select><i></i><span class="icon-place"></span></span></div></div></div>
+
 </td></tr>
 
 
@@ -311,7 +349,7 @@
     
     <!--Segunda Tabla-->
     
-    <table id="tab" border="1" width="60%">
+    <table id="tab" border="1" width="98%">
     <tr><th>Parentesco</th> 
     <th>Nombre y Apellido</th> 
     <th>Documento de Identidad</th> 
@@ -367,8 +405,9 @@
 <!-- Start Formoid form-->
 <link rel="stylesheet" href="../css/formoid-solid-blue.css"   type="text/css" />
 
-<form class="formoid-solid-blue" style="background-color:#FFFFFF;font-size:12px;font-family:'Times New Roman',Times,serif;color:#34495E;width:100%;" method="post" action="reg_solic_op_es_reg.php">
-
+<form class="formoid-solid-blue" style="background-color:#FFFFFF;font-size:12px;font-family:'Times New Roman',Times,serif;color:#34495E;width:100%;" method="post"action="php/reg_solic_bec_es_reg.php">
+<input  type="hidden" name="tip_benf" value="fames"/>
+<input  type="hidden" name="estatus" value="en proceso"/>
 
 <table border="0" align="center" >
 <tr><td><img src="img/logo-unefa.gif" width="90px" height="90px" /></td>
@@ -418,12 +457,11 @@
 </td>
 
 <tr><td>
-<div class="element-radio"><label class="title"><h3>Genero</h3></label>		
-<div class="column column2"><label><input type="radio" name="genero" value="Femenino" /><span>Femenino</span></label>
+<div class="element-select" title="Estado Civil"><label class="title"><span class="required"></span>Género</label><div class="item-cont"><div class="medium"><span><select name="genero" required>
 
-</div><span class="clearfix"></span>
-		<div class="column column2"><label><input type="radio" name="genero" value="Masculino" /><span>Masculino</span></label></div><span class="clearfix"></span>
-</div>
+<option hidden="Seleccione" value="Selecione">Seleccione</option>
+        <option value="Femenino">Femenino</option>
+        <option value="Masculino">Masculino</option></select><i></i><span class="icon-place"></span></span></div></div></div>
 </td></tr>
 
 
@@ -556,8 +594,9 @@
         <section class="contenedor-programa-orientacion" >
             <link rel="stylesheet" href="../css/formoid-solid-blue.css"   type="text/css" />
 
-<form class="formoid-solid-blue" style="background-color:#FFFFFF;font-size:12px;font-family:'Times New Roman',Times,serif;color:#34495E;width:100%" method="post" action="reg_solic_op_es_reg.php">
-
+<form class="formoid-solid-blue" style="background-color:#FFFFFF;font-size:12px;font-family:'Times New Roman',Times,serif;color:#34495E;width:100%" method="post" action="php/reg_solic_bec_es_reg.php">
+<input  type="hidden" name="tip_benf" value="op"/>
+<input  type="hidden" name="estatus" value="en proceso"/>
 
 <table border="0" align="center" >
 <tr><td><img src="img/logo-unefa.gif" width="90px" height="90px" /></td>
@@ -611,12 +650,11 @@
 </td>
 
 <tr><td>
-<div class="element-radio"><label class="title"><h3>Genero</h3></label>		
-<div class="column column2"><label><input type="radio" name="genero" value="Femenino" /><span>Femenino</span></label>
+<div class="element-select" title="Estado Civil"><label class="title"><span class="required"></span>Género</label><div class="item-cont"><div class="medium"><span><select name="genero" required>
 
-</div><span class="clearfix"></span>
-		<div class="column column2"><label><input type="radio" name="genero" value="Masculino" /><span>Masculino</span></label></div><span class="clearfix"></span>
-</div>
+<option hidden="Seleccione" value="Selecione">Seleccione</option>
+        <option value="Femenino">Femenino</option>
+        <option value="Masculino">Masculino</option></select><i></i><span class="icon-place"></span></span></div></div></div>
 </td></tr>
 
 
