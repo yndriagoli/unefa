@@ -1,8 +1,8 @@
 
 <?php 
 session_start();
-$idform=$_POST["admi"];
-$passform=$_POST["pass"];
+$idform=$_POST["username"];
+$passform=$_POST["password"];
 
  include("../includes/usarBD.php"); 
    
@@ -29,7 +29,7 @@ $passform=$_POST["pass"];
 
   {echo "<script type='text/javascript'>
 			alert('Ha Ingresado Satisfactoriamente Al Sistema ');
-			window.location='usuario.php';
+			window.location='../inicio.html';
               </script>";
 }
   
